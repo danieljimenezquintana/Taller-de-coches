@@ -14,4 +14,5 @@ Una de las acciones que podemos realizar es añadir piezas si tenemos rellenado 
 <img src="imagenes/7.png">
 Podemos borrar las piezas una vez acabemos con los fallos de dicha pieza
 <img src="imagenes/8.png">
-Por último tenemos la opción de volver la cual nos llevará a la página principal
+Por último tenemos la opción de volver la cual nos llevará a la página principal.
+Enlace donde explico como funciona el CRUD y muestro el código. Pinche <a href="https://youtu.be/vCOylwpG5wo">aquí</a>
