@@ -34,7 +34,7 @@
 
     <script>
       // Redirecciona a la página principal
-      location.replace("index.jsp");
+      location.replace("Pagprin.jsp");
     </script>
   </body>
 </html>

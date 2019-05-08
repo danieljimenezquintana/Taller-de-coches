@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Garaje</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -291,12 +292,11 @@
                     <div>
                         <input type="password" placeholder="Contraseña" required="" name="password" />
                     </div>
-                <%= session.getAttribute("error") == null ? "" : "<p style='color:red'>" + session.getAttribute("error") + "</p>"%>
                     <div>
-                        <input type="submit" value="Entrar" />
+                        <input type="submit" value="Log in" />
                         <a href="registro.jsp">Registrarme</a>
                     </div>
-                </form>
+                </form>	
             </section>
     </body>
 </html>

@@ -1,4 +1,3 @@
-<%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
@@ -17,21 +16,23 @@
       Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/coches", "root", "");
       Statement s = conexion.createStatement();
 
-      String insercion = "INSERT INTO coches (marca, modelo, motor, anofabric) ";
-      insercion += "VALUES ('";
-      insercion += request.getParameter("marca") + "', '";
-      insercion += request.getParameter("modelo") + "', '";
-      insercion += request.getParameter("motor") + "', '";
-      insercion += request.getParameter("anofabric") + "')";
+      String actualizacion = "UPDATE piezas SET piezas='";
+      actualizacion += request.getParameter("piezas");
+      actualizacion += "', id_coche='";
+      actualizacion += request.getParameter("id_coche");
+      actualizacion += "', descripcion='";
+      actualizacion += request.getParameter("descripcion");
+      actualizacion += "' WHERE id=";
+      actualizacion += request.getParameter("id");
 
-      //out.print(insercion);
-      s.execute(insercion);
-      conexion.close();
+      out.print(actualizacion);
+      //s.execute(actualizacion);
+      //conexion.close();
     %>
 
     <script>
-      //Redirecciona a la página principal
-      location.replace("Pagprin.jsp");
+      // Redirecciona a la página principal
+      //location.replace("reparar.jsp?id=<%=request.getParameter("id_coche")%>");
     </script>
   </body>
 </html>

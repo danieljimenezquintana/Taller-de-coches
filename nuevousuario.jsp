@@ -1,3 +1,4 @@
+<%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
@@ -10,22 +11,25 @@
   </head>
   <body>
     <%
+      request.setCharacterEncoding("UTF-8");
+
       Class.forName("com.mysql.jdbc.Driver");
       Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/coches", "root", "");
       Statement s = conexion.createStatement();
-      
-      String borrado = "DELETE FROM coches WHERE id=";
-      borrado += request.getParameter("id");
-      
-      //out.print(borrado);
-      s.execute(borrado);
+
+      String insercion = "INSERT INTO usuario (uname, pass) ";
+      insercion += "VALUES ('";
+      insercion += request.getParameter("usuario") + "', '";
+      insercion += request.getParameter("password") + "')";
+
+      //out.print(insercion);
+      s.execute(insercion);
       conexion.close();
     %>
-    
+
     <script>
-      // Redirecciona a la página principal
-      location.replace("Pagprin.jsp");
+      //Redirecciona a la página principal
+      location.replace("index.jsp");
     </script>
   </body>
 </html>
-
