@@ -17,4 +17,4 @@ Podemos borrar las piezas una vez acabemos con los fallos de dicha pieza
 Por último tenemos la opción de volver la cual nos llevará a la página principal.
 Enlace donde explico como funciona el CRUD y muestro el código. Pinche <a href="https://youtu.be/vCOylwpG5wo">aquí</a>
 # Taller de coches Versión 2.0
-En la segunda versión de la aplicación he implementado un login y ahora para poder iniciar la aplicación deberás de primero iniciar sesión y si no tienes usuario podrás crearte uno para acceder a ella y luego deberás de cerrar sesión para poder salir de ella.                                                                                                             
+En la segunda versión de la aplicación he implementado un login y ahora para poder iniciar la aplicación deberás de primero iniciar sesión y si no tienes usuario podrás crearte uno para acceder a ella y luego deberás de cerrar sesión para poder salir de ella.                   Enlace donde explico como funciona el CRUD v2.0. Pinche <a href="https://youtu.be/cN_EsecI7I4">aquí</a>                                                         
