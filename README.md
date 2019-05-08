@@ -1,4 +1,4 @@
-# Taller-de-coches
+# Taller de coches
 En la primera imagen vemos la lista de los coches alojados en el taller.
 <img src="imagenes/1.png">
 Dandole al botón de modificar nos permitirá cambiar los datos de cualquier coche ya alojado en la lista del taller y dandole al botón guardar el cual aparecerá a la vez con uno de cancelar que nos cancela la edición y el de guardará los cambios realizados como vemos en las imagenes
@@ -16,3 +16,5 @@ Podemos borrar las piezas una vez acabemos con los fallos de dicha pieza
 <img src="imagenes/8.png">
 Por último tenemos la opción de volver la cual nos llevará a la página principal.
 Enlace donde explico como funciona el CRUD y muestro el código. Pinche <a href="https://youtu.be/vCOylwpG5wo">aquí</a>
+#Taller de coches Versión 2.0
+En la segunda versión de la aplicación he implementado un login y ahora para poder iniciar la aplicación deberás de primero iniciar sesión y si no tienes usuario podrás crearte uno para acceder a ella y luego deberás de cerrar sesión para poder salir de ella.                                                                                                             
